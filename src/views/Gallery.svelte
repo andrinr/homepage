@@ -1,6 +1,7 @@
 <script lang="ts">
     import Carousel from '@beyonk/svelte-carousel'
     import { ChevronLeftIcon, ChevronRightIcon } from 'svelte-feather-icons'
+    import Lazy from 'svelte-lazy';
 
     const imgs = [
         "/img/gallery/02.png",
@@ -37,7 +38,6 @@
         {#each imgs as img}
         <div class="slide-content">
             <img src="{img}">
-
         </div>
         {/each}
         <span class="control" slot="right-control">

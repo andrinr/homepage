@@ -19,7 +19,6 @@ body {
 	background-color: var(--black);
 	color: var(--white);
 	margin: 0;
-	padding: 8px;
 	box-sizing: border-box;
 	font-family: 'Lato', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
