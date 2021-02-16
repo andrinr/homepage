@@ -4,6 +4,7 @@ import Folding from "./Folding.svelte";
 import Packing from "./Packing.svelte";
 import Adaptive from "./Adaptive.svelte";
 import Klemens from "./Klemens.svelte";
+import GraphDev from "./GraphDev.svelte";
 
 export interface IProject {
     title: string;
@@ -31,6 +32,13 @@ export const projects: IProject[] = [
         slug: 'klemens',
         tags: [ETag.web, ETag.audio, ETag.creative],
         component: Klemens,
+        image: '/img/klemensrehmann_01.gif'
+    },
+    {
+        title: "graphh",
+        slug: 'graph',
+        tags: [ETag.web, ETag.audio, ETag.creative],
+        component: GraphDev,
         image: '/img/klemensrehmann_01.gif'
     },
     {
