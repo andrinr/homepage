@@ -112,9 +112,6 @@
         filter: grayscale(0%);
     }
 
-    .project-preview:hover {
-        transform: translate(30px);
-    }
 
     h3{
         position: relative;

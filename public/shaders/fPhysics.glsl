@@ -2,7 +2,7 @@
 precision highp float;
 varying vec2 v_texcoord;
 uniform sampler2D u_texture;
-uniform vec2 gravity_center;
+uniform vec2 mouse_pos;
 uniform float off_gravity;
 uniform float restore_colors;
 uniform float dt;
@@ -19,38 +19,40 @@ void main() {
     vel = particle.zw;
     acc = vec2(0.);
 
-    vec2 v = gravity_center - pos;
-    float d = length(v);
 
-    if (abs(d) < 0.1){
-        acc = -normalize(v) * 4. * d;
-    }
-
-    acc.x += 0.05 * (sin(pos.x*6.+time) + cos(pos.y * 12.+time) * cos(pos.x * 8.4 - time));
-    acc.y += 0.05*  (cos(pos.y*9.5-time) + sin(pos.x * 15.-time) * sin(pos.x * 10.2 + time));
+    acc.x += 0.03 * (sin(pos.x*6.+time) + cos(pos.y * 12.+time) * cos(pos.x * 8.4 - time));
+    acc.y += 0.03*  (cos(pos.y*9.5-time) + sin(pos.x * 15.-time) * sin(pos.x * 10.2 + time));
 
     vel += dt * acc;
 
-    vel += dt * 0.5 * (gravity_center-vec2(0.5));
+    //vel += dt * 0.5 * (gravity_center-vec2(0.5));
 
-    vel *= 0.99 - 0.2*abs(sin(time*0.1));
+    vel *= 0.97;
 
     pos += dt * vel;
 
+    if (float(fract(v_texcoord.y - time*0.05)) < 0.1){
+        pos.x = mouse_pos.x;
+        pos.y = mouse_pos.y;
+        vel.x = 0.1* cos(mouse_pos.x*40. + v_texcoord.x*6.3);
+
+        vel.y = 0.1*sin(mouse_pos.y*40. + v_texcoord.x *6.3);
+    }
+
     if (pos.x > 1.){
-        pos.x = 0.;
+        vel.x = -vel.x * 4.;
     }
 
     if (pos.x < 0.){
-        pos.x = 1.;
+        vel.x = -vel.x * 4.;
     }
 
     if (pos.y > 1.){
-        pos.y = 0.;
+        vel.y = -vel.y * 4.;
     }
 
     if (pos.y < 0.){
-        pos.y = 1.;
+        vel.y = -vel.y * 4.;
     }
 
     gl_FragColor = vec4(pos, vel);

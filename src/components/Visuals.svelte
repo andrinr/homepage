@@ -7,6 +7,8 @@
     import vDraw from "../../public/shaders/vDraw.glsl"
     import fDraw from "../../public/shaders/fDraw.glsl"
 
+    let requestId = undefined;
+
     onMount( async() => {
         const twgl = await import('twgl.js');
         const mousepos = [0.5, 0.5];
@@ -94,7 +96,7 @@
             twgl.setBuffersAndAttributes(gl, programPhysics, positionBuffer);
             twgl.setUniforms(programPhysics, {
                 u_texture: fb1.attachments[0],
-                gravity_center: mousepos,
+                mouse_pos: mousepos,
                 off_gravity: offGravity,
                 restore_colors: restoreColors,
                 time: prevTime,
@@ -118,7 +120,7 @@
 
         (function animate(now) {
             draw(now / 1000);
-            requestAnimationFrame(animate);
+            requestId = requestAnimationFrame(animate);
         })(0);
 
         function setMousePos(e) {
@@ -142,7 +144,10 @@
     });
 
     onDestroy(() => {
-
+        if (requestId) {
+            window.cancelAnimationFrame(requestId);
+            requestId = undefined;
+        }
     });
 
 </script>

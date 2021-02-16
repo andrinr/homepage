@@ -1,9 +1,9 @@
 :root{
 	--primary: #8a2700;
-	--secondary: #00718d;
+	--secondary: #116883;
 	--white: #fff;
-	--black: rgb(41, 41, 41);
-	--gray: rgb(211, 211, 211);
+	--black: rgb(26, 26, 26);
+	--gray: rgb(158, 158, 158);
 	--slow: 0.5s;
 	--normal: 0.3s;
 	--fast: 0.1s;
@@ -69,11 +69,11 @@ li{
 a {
 	color: var(--gray);
 	text-decoration: none;
+	outline: none;
 }
 
 a:hover {
 	color: var(--white);
-	background-color: var(--secondary);
 }
 
 label {

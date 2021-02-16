@@ -45,7 +45,7 @@
 
     .current {
         color: var(--white);
-        background-color: var(--secondary);
+        /*background-color: var(--secondary);*/
     }
 
     .header {
@@ -67,7 +67,18 @@
         display: inline-block;
         padding: 0.5em 0.5em;
         cursor: pointer;
-        transition: var(--slow) ease-in-out;
+        transition: var(--fast) ease-in-out;
+    }
+
+    .current h2:after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: var(--secondary);
+        z-index: 2;
     }
 
     .social-media{
