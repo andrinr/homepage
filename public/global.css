@@ -1,5 +1,5 @@
 :root{
-	--primary: #8a2700;
+	--primary: rgb(224, 64, 64);
 	--secondary: #116883;
 	--white: #fff;
 	--black: rgb(26, 26, 26);
@@ -89,7 +89,7 @@ label {
 }
 
 .content h2{
-	margin-bottom: 2em;
+	margin-bottom: 0;
 }
 
 .content h3{
@@ -116,6 +116,10 @@ label {
 	margin-top: 3em;
 	margin-bottom: 1em;
 	padding-bottom: 1em;
+}
+
+.segment img{
+	object-fit: cover;
 }
 
 code{

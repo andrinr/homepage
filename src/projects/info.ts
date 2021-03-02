@@ -5,6 +5,7 @@ import Packing from "./Packing.svelte";
 import Adaptive from "./Adaptive.svelte";
 import Klemens from "./Klemens.svelte";
 import GraphDev from "./GraphDev.svelte";
+import Cityscapes from "./Cityscapes.svelte";
 
 export interface IProject {
     title: string;
@@ -35,11 +36,18 @@ export const projects: IProject[] = [
         image: '/img/klemensrehmann_01.gif'
     },
     {
-        title: "graphh",
-        slug: 'graph',
-        tags: [ETag.web, ETag.audio, ETag.creative],
+        title: "Tree hierarchy",
+        slug: 'tree',
+        tags: [ETag.web, ETag.creative],
         component: GraphDev,
-        image: '/img/klemensrehmann_01.gif'
+        image: '/img/tree_prev.PNG'
+    },
+    {
+        title: "Cityscapes",
+        slug: 'city',
+        tags: [ETag.web, ETag.creative],
+        component: Cityscapes,
+        image: '/img/city.gif'
     },
     {
         title: "frequency driven gpu particles",

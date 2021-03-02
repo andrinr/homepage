@@ -176,8 +176,13 @@
         background-color: var(--black);
     }
 
-    h1{
-        font-size: 5em;
+    h3{
+        margin: 0;
+        font-size: 3em;
+    }
+
+    h2{
+        margin: none;
     }
 
     h1:hover{

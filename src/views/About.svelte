@@ -3,7 +3,7 @@
 		{
 			date: '2014',
 			place: 'Creatorsproject',
-			text: 'Work featured in vice creatorsproject ',
+			text: 'Feature',
 			url: 'https://www.vice.com/en/article/jpvpdx/480000-particles-compose-this-undulating-audio-visualization'
 		},
 		{
@@ -15,7 +15,7 @@
 		{
 			date: '2016',
 			place: 'Artificial Rome',
-			text: 'Internship at Artificial Rome in Berlin as Motion Designer',
+			text: 'Intern motion design, web devlopment and creative direction',
 			url: 'http://www.artificialrome.com/'
 		},
 		{
@@ -27,7 +27,7 @@
 		{
 			date: '2018',
 			place: 'FrameFactory',
-			text: 'Internship as fullstack web developer at FrameFactory AG',
+			text: 'Intern fullstack web developer',
 			url: 'https://www.framefactory.ch/'
 		},
 		{

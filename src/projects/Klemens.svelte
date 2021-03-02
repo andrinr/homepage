@@ -6,7 +6,7 @@ import Project from "./Project.svelte";
     
 </script>
 
-<Project title="klemensrehmann.ch" date="25.11.2020" >
+<Project title="klemensrehmann.ch" date="25.11.2020" link="https://klemensrehmann.ch">
     <div class="segment">
         <img src="/img/klemensrehmann_01.gif" height="200px" alt="Gif of website for customer">
     </div>

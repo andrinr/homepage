@@ -1,6 +1,7 @@
 <script lang="ts">
     export let title = "Uknown project";
     export let date = "10.10.2020";
+    export let link = null;
 
 </script>
 
@@ -11,6 +12,10 @@
     <h1>
         {title}
     </h1>
+    {#if link}
+        <a class="project-link" href={link}><i class="fas fa-link"></i> link to project</a>
+    {/if}
+    
 
     <slot>
 
@@ -18,8 +23,30 @@
 
 </div>
 
-<style>
+<style scoped={false}>
     h1{
         word-break: break-all;
     }
+
+    .content{
+        position: relative;
+    }
+
+    .project-link{
+        padding: 2px 5px;
+        font-style: 1.4em;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-style: solid;
+        color: var(--gray);
+        border-color: var(--gray);
+    }
+
+    
+    .project-link:hover{
+        border-color: var(--white);
+        color: var(--white);
+    }
+
 </style>
