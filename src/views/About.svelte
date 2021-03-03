@@ -50,6 +50,8 @@
 		}
 	];
 
+	// TODO add skill overview
+
 	timeline = timeline.reverse();
 </script>
 

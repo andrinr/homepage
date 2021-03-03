@@ -22,7 +22,7 @@
         height = 100;
 
         if (document.body.clientWidth > 600){
-            const scale = document.body.clientWidth / 10;
+            const scale = document.body.clientWidth / 11;
             width = Math.floor(Math.random() * 3) * scale + scale;
             height = Math.floor(Math.random() * 3) * scale + scale;
         }
@@ -115,6 +115,7 @@
 
     h3{
         position: relative;
+        word-break: break-all;
     }
 </style>
 

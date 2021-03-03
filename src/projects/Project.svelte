@@ -25,7 +25,11 @@
 
 <style scoped={false}>
     h1{
+        margin-top: 0.2em;
         word-break: break-all;
+    }
+    h6{
+        color: var(--gray);
     }
 
     .content{

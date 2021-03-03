@@ -3,7 +3,7 @@
 	--secondary: #116883;
 	--white: #fff;
 	--black: rgb(26, 26, 26);
-	--gray: rgb(158, 158, 158);
+	--gray: rgb(190, 190, 190);
 	--slow: 0.5s;
 	--normal: 0.3s;
 	--fast: 0.1s;
@@ -18,7 +18,7 @@ html, body {
 body {
 	background-color: var(--black);
 	color: var(--white);
-	margin: 0;
+	margin: 1em;
 	box-sizing: border-box;
 	font-family: 'Lato', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
@@ -37,6 +37,9 @@ h1, h2, h3, h4, h5, h6{
 	text-transform: lowercase;
 }
 
+h3{
+	font-size: 1.5em;
+}
 p{
 	color: var(--gray);
 	margin-top: 0.5em;
@@ -80,7 +83,7 @@ label {
 }
 
 .content{
-	max-width: 900px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
