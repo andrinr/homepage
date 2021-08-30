@@ -18,7 +18,7 @@ html, body {
 body {
 	background-color: var(--black);
 	color: var(--white);
-	margin: 1em;
+	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Lato', Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
@@ -83,7 +83,7 @@ label {
 }
 
 .content{
-	max-width: 1200px;
+	max-width: 1600px;
 	margin: 0 auto;
 }
 

@@ -18,11 +18,11 @@
     let height = 200;
 
     onMount(() => {
-        width = document.body.clientWidth * 0.7;
+        width = document.body.clientWidth * 0.5;
         height = 100;
 
         if (document.body.clientWidth > 600){
-            const scale = document.body.clientWidth / 11;
+            const scale = document.body.clientWidth / 15;
             width = Math.floor(Math.random() * 3) * scale + scale;
             height = Math.floor(Math.random() * 3) * scale + scale;
         }
@@ -121,7 +121,6 @@
 
 <div
     class={'grid-item project-preview ' + tagsString}
-    on:click={click}
     on:click={click}
     on:mousemove={mouse}
     on:mouseleave={leave}>

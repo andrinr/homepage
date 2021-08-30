@@ -3,6 +3,12 @@
     export let date = "10.10.2020";
     export let link = null;
 
+    import { onMount } from "svelte";
+
+  onMount(() => {
+    window.scrollTo(0, 0);
+  });
+
 </script>
 
 <div class="content">
