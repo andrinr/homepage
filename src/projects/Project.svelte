@@ -40,6 +40,7 @@
 
     .content{
         position: relative;
+        max-width: 1000px;
     }
 
     .project-link{

@@ -47,6 +47,12 @@
 			place: 'UZH',
 			text: 'Computer and Computational science Bachelor Student at University of Zürich',
 			url: 'https://uzh.ch/'
+		},
+		{
+			date: '2021',
+			place: 'MAXON',
+			text: 'Summer Intern in the simulations team of Cinema4D',
+			url: 'https://www.maxon.net/en/'
 		}
 	];
 
