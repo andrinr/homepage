@@ -12,8 +12,8 @@
         iso = new Isotope(grid, {
             itemSelector: ".grid-item",
             layoutMode: "masonry",
-            stagger: 40,
-            transitionDuration: "0.2s",
+            stagger: 100,
+            transitionDuration: "0.0s",
             hiddenStyle: {
                 opacity: 0,
             },
@@ -92,7 +92,8 @@
         }
     }
 </style>
-<h1>ideas and impressions</h1> 
+<p>
+    This is a collection of projects I have worked on in the past. I have not updated this page in a while, a better reflection of my work can be found on <a href="https://github.com/andrinr">GitHub</a>.
 <br><br><br>
 <div class="filter">
     <h6>Filter by tags:</h6>

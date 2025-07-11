@@ -63,7 +63,6 @@
 </script>
 
 <div class="content">
-	<h1>About andrin Rehmann</h1>
 	<div class="row">
 		<p>Having a strong background in digital arts and 3D design I gradually progressed my skills to coding,
 			software engineering and computational science. In the past I have worked on numerous art projects 
