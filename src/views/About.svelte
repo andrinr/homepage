@@ -1,59 +1,60 @@
 <script lang="ts">
 	let timeline = [
 		{
-			date: '2014',
-			place: 'Creatorsproject',
-			text: 'Feature',
-			url: 'https://www.vice.com/en/article/jpvpdx/480000-particles-compose-this-undulating-audio-visualization'
-		},
-		{
-			date: '2015',
-			place: 'Kelly Clarkson',
-			text: 'Motion Graphic Designer responsible for the main visuals of the 2015 Summer Tour',
-			url: 'https://www.youtube.com/watch?v=2mTZRifMlRo'
-		},
-		{
 			date: '2016',
 			place: 'Artificial Rome',
 			text: 'Intern motion design, web devlopment and creative direction',
 			url: 'http://www.artificialrome.com/'
 		},
 		{
-			date: '2017',
-			place: 'Kantonschule Wettingen',
-			text: 'Award for best high school research diploma',
-			url: 'https://www.proargovia.ch/webseite/wp-content/uploads/2017/06/jurybericht-map-2017-andrin-rehmann.pdf'
-		},
-		{
-			date: '2018',
+			date: '2018-2020',
 			place: 'FrameFactory',
-			text: 'Intern fullstack web developer',
+			text: '(Intern) Fullstack web developer',
 			url: 'https://www.framefactory.ch/'
 		},
 		{
-			date: '2019-2020',
-			place: 'FrameFactory',
-			text: 'Fullstack web developer',
-			url: 'https://www.framefactory.ch/'
-		},
-		{
-			date: '2020-now',
-			place: 'jkweb',
-			text: 'Fullstack web developer',
-			url: 'https://jkweb.ch/en/'
-		},
-		{
-			date: '2018-now',
+			date: '2018-2022',
 			place: 'UZH',
 			text: 'Computer and Computational science Bachelor Student at University of Zürich',
 			url: 'https://uzh.ch/'
+		},
+		{
+			date: '2020-2022',
+			place: 'jkweb',
+			text: 'Fullstack web developer',
+			url: 'https://jkweb.ch/en/'
 		},
 		{
 			date: '2021',
 			place: 'MAXON',
 			text: 'Summer Intern in the simulations team of Cinema4D',
 			url: 'https://www.maxon.net/en/'
-		}
+		},
+		{
+			date: '2022',
+			place: 'UZH',
+			text: 'Teach Assistant Database Systems',
+			url: 'https://www.ifi.uzh.ch/en/dbtg.html'
+		},
+		{
+			date: '2022-2024',
+			place: 'UZH',
+			text: 'Specialized Master in Computational Science',
+			url: 'https://www.uzh.ch/de/studies/programs/master/computational_science.html'
+		},
+		{
+			date: '2022-2023',
+			place: 'UZH',
+			text: 'Research Internship Complex Networks / GNNs',
+			url: 'https://dm3l.uzh.ch/bovet'
+		},
+		{
+			date: '2024-now',
+			place: 'Pasteur Labs',
+			text: 'Simulation Intelligence Engineer',
+			url: 'https://pasteurlabs.ai/'
+		},
+
 	];
 
 	// TODO add skill overview
@@ -67,7 +68,8 @@
 		<p>Having a strong background in digital arts and 3D design I gradually progressed my skills to coding,
 			software engineering and computational science. In the past I have worked on numerous art projects 
 			and installations as well as gained professional experience in software engineering during internships, 
-			employments and university projects. 
+			employments and university projects. During my Masters and my current exmployment I am exploring the
+			intersection between simulations and machine learning.
 		</p>
 		<img src="/img/andrin.png" alt="andrin rehmann face">
 	</div>
@@ -163,6 +165,7 @@
 		object-fit: cover;
 		width: 30%;
 		display: inline-block;
+		max-width: 200px;
 	}
 	@media (max-width: 500px){
 		.row{

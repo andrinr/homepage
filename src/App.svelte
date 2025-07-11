@@ -10,7 +10,7 @@
 
     const items = [
         {id: 0, name: "/projects", component: Projects},
-        {id: 2, name: "/gallery", component: Gallery},
+        //{id: 2, name: "/gallery", component: Gallery},
         {id: 1, name: "/about", component: About},
     ];
 
@@ -143,7 +143,7 @@
             <a href="https://github.com/andrinr/">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="mailto:andrinrehmann@gmail.ch">
+            <a href="mailto:andrinrehmann@gmail.com">
                 <i class="fas fa-at"></i>
             </a>
         </div>
